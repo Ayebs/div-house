@@ -96,7 +96,6 @@ body {
       rgba(18, 6, 5, 0.40948879551820727) 0%
     ),
     url("imagesite/interior1.jpg");
-  /* background-image: url("./imagesite/interior1.jpg"); */
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -235,18 +234,20 @@ form .advanced {
   background-color: rgb(238, 237, 237);
 }
 
-.perfectHome_text {
-  padding-top: 5rem;
+.section_header {
+  padding-top: 4rem;
   padding-left: 2rem;
   margin-left: 10rem;
 }
 
-.perfectHome_text p:first-of-type {
+.section_header p:first-of-type {
   font-size: 1.5rem;
+  color: #191919;
 }
 
-.perfectHome_text p:last-of-type {
+.section_header p:last-of-type {
   color: grey;
+  padding-top: 8px;
 }
 
 .perfectButtons {
@@ -254,7 +255,7 @@ form .advanced {
   justify-content: flex-end;
   margin-right: 12rem;
   gap: 0.3rem;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 
 .perfectButtons button {
@@ -270,7 +271,7 @@ form .advanced {
   display: flex;
   justify-content: center;
   gap: 0.8rem;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .house_img {
@@ -356,21 +357,6 @@ form .advanced {
   border-radius: 4px;
 }
 
-.team_txt {
-  margin: 0rem 0 3rem 10rem;
-  padding: 4rem 10px 10px;
-}
-
-.team_txt p:first-of-type {
-  font-size: 2rem;
-  color: #191919;
-}
-
-.team_txt p:last-of-type {
-  color: grey;
-  padding-top: 8px;
-}
-
 .person {
   position: relative;
   margin-bottom: 5rem;
@@ -379,7 +365,6 @@ form .advanced {
 .person_img {
   position: relative;
   display: inline-block;
-
 }
 
 .person_img::before {
@@ -412,21 +397,9 @@ form .advanced {
   background-color: rgb(238, 237, 237);
 }
 
-.realEstate_txt {
-  padding-top: 5rem;
-  padding-left: 2rem;
-  margin-left: 10rem;
-}
-
-.realEstate_txt p:first-of-type {
-  font-size: 1.5rem;
-
-}
-
-.realEstate_txt p:last-of-type {
-  margin-bottom: 25px;
+.realEstate .section_header p:last-of-type {
+  margin-bottom: 30px;
   font-size: 13px;
-  color: grey;
 }
 
 .NYCEstate {
@@ -434,8 +407,6 @@ form .advanced {
   justify-content: center;
   gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
-  /* place-items: center; */
-  /* width: 60%;  */
   margin: 0 20%; 
 }
 
@@ -476,7 +447,6 @@ form .advanced {
 
 .estate_img_btns button:last-of-type {
   background-color: #595757;
-  /* right: 5rem; */
 }
 
 .estate_info {
@@ -568,4 +538,164 @@ form .advanced {
 .box_txt a {
   text-decoration: none;
   color: orange; 
+}
+
+.blog {
+  background-color: #f4f4f4;
+  /* margin-bottom: 5rem; */
+}
+
+.blog_pictures {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 2rem 0rem 0rem 2rem;
+  padding-bottom: 7rem;
+  /* padding: 0 2rem; */
+  position: relative;
+}
+
+.blog1 {
+  background-color: #fff;
+  width: 13rem;
+  padding: 0.5rem;
+  /* margin: 2rem; */
+}
+
+.blog1 img {
+  width: 13rem;
+  height: 10rem;
+  border-radius: 4px;
+}
+
+.blog_info {
+  width: 13rem;
+  color: grey;
+  font-size: 12px;
+  padding: 0.5rem;
+}
+
+.date {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.date p:last-of-type {
+  color: orange;
+}
+
+.details p:first-of-type {
+  color: #191919;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 8px ;
+}
+
+.details p:last-of-type {
+  font-size: 11px;
+  margin-bottom: 8px;
+  padding-right: 2px;
+  width: 12rem;
+}
+
+.blog_info a {
+  text-decoration: none;
+  color: orange;
+  /* padding-bottom: 10px; */
+}
+
+.user {
+  display: flex;
+  gap: 8px;
+  color: grey;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.details::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0.5;
+  right: 1;
+  height: 1px;
+  width: 13rem;
+  background-color: grey;
+}
+
+.about_section {
+  background-color: #191919;
+  color: #fff;
+}
+
+.about_contact_div {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+  margin: 0 10rem;
+  padding: 4rem 0;
+  font-size: 12px;
+
+}
+
+.about_contact_div p {
+  /* font-size: 15px; */
+  margin: 1rem;
+}
+
+.about_contact_div p:first-of-type {
+  font-size: 16px;
+  font-weight: 450;
+  
+}
+.about_site p:last-of-type {
+  width: 25rem;
+  margin-bottom: 1rem;
+} 
+.about_contact_div a {
+  text-decoration: none;
+  color: #fff;
+  margin: 1rem;
+}
+
+.houzez {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+}
+
+.footer_details {
+  display: flex;
+  gap: 10rem;
+  margin: 0 10rem;
+  padding: 1.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.TnC {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer_details .socials {
+ margin-left: 0; 
+ display: flex;
+ gap: 5rem;
+}
+
+#top_btn {
+  background-color: orange;
+  color: #fff;
+  padding: 10px;
+  border-radius: 2px;
+  gap: 0;
+
 }
