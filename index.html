@@ -49,6 +49,8 @@
         ><span>houzez@favethemes.com</span>
       </div>
     </header>
+    <!-- ------ END OF HEADER SECTION -------- -->
+
     <section class="hero">
       <div class="hero_nav">
         <div class="houzez">
@@ -76,7 +78,10 @@
         </p>
         <p>$890000</p>
       </div>
+      <div class="bar"></div>
     </section>
+    <!-- ------ END OF HERO SECTION ------- -->
+
     <section class="form">
       <form action="">
         <div class="form-input">
@@ -96,6 +101,8 @@
             
       </form>
     </section>
+    <!-- ------- END OF FORM SECTION ------- -->
+
     <section class="perfectHome">
       <div class="section_header">
         <p>Find Your Perfect Home</p>
@@ -427,10 +434,9 @@
             </div>
           </div>
         </div>
-
-        <div class="load_btn">
-          <button type="button">Load More</button>
-        </div>
+      </div>
+      <div class="load_btn">
+        <button type="button">Load More</button>
       </div>
     </section>
     <!-- --------- END OF REAL ESTATE SECTION ---------- -->
@@ -489,7 +495,7 @@
 
       <div class="blog_pictures">
         <div class="blog1">
-          <img src="imagesite/blog1.jpg" alt="" />
+          <div class="blog_img"><img src="imagesite/blog1.jpg" alt="" /></div>
 
           <div class="blog_info">
             <div class="date">
@@ -517,7 +523,7 @@
         </div>
 
         <div class="blog1">
-          <img src="imagesite/blog2.jpg" alt="" />
+          <div class="blog_img"><img src="imagesite/blog2.jpg" alt="" /></div>
 
           <div class="blog_info">
             <div class="date">
@@ -537,11 +543,15 @@
               </p>
               <a href="http://google.com">Continue reading</a>
             </div>
+            <div class="user">
+              <i class="fa-regular fa-user"></i>
+              <p>by Martin Moore</p>
+            </div>
           </div>
         </div>
 
         <div class="blog1">
-          <img src="imagesite/blog3.jpg" alt="" />
+          <div class="blog_img"><img src="imagesite/blog3.jpg" alt="" /></div>
 
           <div class="blog_info">
             <div class="date">
@@ -561,11 +571,15 @@
               </p>
               <a href="http://google.com">Continue reading</a>
             </div>
+            <div class="user">
+              <i class="fa-regular fa-user"></i>
+              <p>by Martin Moore</p>
+            </div>
           </div>
         </div>
 
         <div class="blog1">
-          <img src="imagesite/blog4.jpg" alt="" />
+          <div class="blog_img"><img src="imagesite/blog4.jpg" alt="" /></div>
 
           <div class="blog_info">
             <div class="date">
@@ -584,6 +598,10 @@
                 mollis et sem sed sollicitudin. Donec...
               </p>
               <a href="http://google.com">Continue reading</a>
+            </div>
+            <div class="user">
+              <i class="fa-regular fa-user"></i>
+              <p>by Martin Moore</p>
             </div>
           </div>
         </div>
@@ -620,6 +638,15 @@
 
         <div class="discover">
           <p>Discover</p>
+          <p>
+            <i class="fa-solid fa-chevron-right"></i>
+            Residential
+          </p>
+          <div class="discover_subsection">
+            <p><i class="fa-solid fa-chevron-right"></i>Apartment</p>
+            <p><i class="fa-solid fa-chevron-right"></i>Single Family Home</p>
+            <p><i class="fa-solid fa-chevron-right"></i>Villa</p>
+          </div>
 
         </div>
       </div>
@@ -627,34 +654,38 @@
     <!-- ------ END OF ABOUT/ CONTACT SECTION ------- -->
 
     <footer>
-      <div class="footer_details">
-        <p>&copy;Houzez - All rights reserved</p>
-        <div class="TnC">
-          <p>Privacy</p>
-          <p>Terms and Conditions</p>
-          <p>Contact</p>
+      <div class="footer">
+        <div class="footer_details">
+          <p>&copy;Houzez - All rights reserved</p>
+          <div class="TnC">
+            <p>Privacy</p>
+            <p>Terms and Conditions</p>
+            <p>Contact</p>
+          </div>
+          <div class="socials">
+            <ul>
+              <li>
+              <i class="fa-brands fa-facebook-f"></i>
+              </li>
+              <li>
+              <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li>
+              <i class="fa-brands fa-google-plus"></i>
+              </li>
+              <li>
+              <i class="fa-brands fa-linkedin-in"></i>
+              </li>
+              <li>
+              <i class="fa-brands fa-square-instagram"></i>
+              </li>
+            </ul>
+          </div>
+        </div> 
+        <div id="top_btn">
+          <button type="button"><i class="fa-solid fa-chevron-up"></i></button>
         </div>
-        <div class="socials">
-          <ul>
-            <li>
-            <i class="fa-brands fa-facebook-f"></i>
-            </li>
-            <li>
-            <i class="fa-brands fa-twitter"></i>
-            </li>
-            <li>
-            <i class="fa-brands fa-google-plus"></i>
-            </li>
-            <li>
-            <i class="fa-brands fa-linkedin-in"></i>
-            </li>
-            <li>
-            <i class="fa-brands fa-square-instagram"></i>
-            </li>
-          </ul>
-        </div>
-        <button id="top_btn">^</button>
-      </div>  
+      </div>
     </footer>
   </body>
 </html>
