@@ -460,8 +460,13 @@ form .advanced {
 
 .price {
   display: flex;
-  gap: 2.5rem;
+  gap: 3rem;
   margin: 0.5rem 0;
+  font-size: 12px;
+}
+
+.price i {
+  margin-right: 6px;
 }
 
 .price p:first-of-type {
@@ -599,6 +604,10 @@ form .advanced {
   color: orange;
 }
 
+.date i {
+  margin: 0 5px;
+}
+
 .details p:first-of-type {
   color: #191919;
   font-size: 15px;
@@ -634,7 +643,7 @@ form .advanced {
   left: 0;
   right: 0;
   height: 2px;
-  width: 13rem;
+  width: 14rem;
   margin: 0.8rem 0;
   background-color: #f4f4f4;
 }
@@ -651,11 +660,9 @@ form .advanced {
   margin: 0 10rem;
   padding: 4rem 0;
   font-size: 12px;
-
 }
 
 .about_contact_div p {
-  /* font-size: 15px; */
   margin: 1rem;
 }
 
@@ -707,7 +714,7 @@ footer {
 
 .footer_details {
   display: flex;
-  gap: 11rem;
+  gap: 10rem;
   margin: 0 10rem;
   padding: 1.5rem 1rem;
   justify-content: center;
@@ -735,5 +742,4 @@ footer {
   border-radius: 3px;
   border: none;
   margin: 0 1rem 1rem 0 ;
-
 }
