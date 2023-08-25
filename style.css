@@ -20,6 +20,10 @@
   margin-right: 10rem;
 }
 
+.contact a i {
+  gap: 0.5rem;
+}
+
 .fa-phone {
   color: white;
 }
@@ -286,7 +290,7 @@ form .advanced {
   border-right: 7px white solid;
   border-radius: 3px;
 }
- .house1::before {
+.house1::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -295,7 +299,7 @@ form .advanced {
   height: 50%;
   background: linear-gradient(to bottom, transparent, black);
   opacity: 0.7;
- } 
+}
 
 .house_img button {
   background-color: rgb(94, 92, 92);
@@ -411,14 +415,13 @@ form .advanced {
   justify-content: center;
   gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 20%; 
+  margin: 0 20%;
 }
 
-.estate_img{
+.estate_img {
   position: relative;
   background-color: #fff;
   border-radius: 4px;
-
 }
 
 .estate_img img {
@@ -433,11 +436,10 @@ form .advanced {
   top: 0;
   display: flex;
   gap: 6.5rem;
-  
 }
 
 .estate_img_btns button {
-  border-radius: 2px; 
+  border-radius: 2px;
   padding: 3px;
   font-size: 10px;
   margin: 12px;
@@ -507,7 +509,7 @@ form .advanced {
   text-align: center;
   top: 0;
   padding: 5rem;
-  color: #f9f9f9; 
+  color: #f9f9f9;
 }
 
 .services_txt p:first-of-type {
@@ -528,7 +530,7 @@ form .advanced {
 .box i {
   color: orange;
   font-size: 3rem;
-  text-align: center;  
+  text-align: center;
   margin: 3rem;
 }
 
@@ -550,12 +552,11 @@ form .advanced {
 
 .box_txt a {
   text-decoration: none;
-  color: orange; 
+  color: orange;
 }
 
 .blog {
   background-color: #f4f4f4;
-  /* margin-bottom: 5rem; */
 }
 
 .blog_pictures {
@@ -564,15 +565,12 @@ form .advanced {
   justify-content: center;
   margin: 2rem 0rem 0rem 2rem;
   padding-bottom: 7rem;
-  /* padding: 0 2rem; */
   position: relative;
 }
 
 .blog1 {
   background-color: #fff;
   width: 14rem;
-  /* padding: 0.5rem; */
-  /* margin: 2rem; */
 }
 
 .blog_img {
@@ -612,7 +610,7 @@ form .advanced {
   color: #191919;
   font-size: 15px;
   font-weight: 400;
-  margin-bottom: 8px ;
+  margin-bottom: 8px;
 }
 
 .details p:last-of-type {
@@ -669,12 +667,11 @@ form .advanced {
 .about_contact_div p:first-of-type {
   font-size: 16px;
   font-weight: 450;
-  
 }
 .about_site p:last-of-type {
   width: 25rem;
   margin-bottom: 1rem;
-} 
+}
 .about_contact_div a {
   text-decoration: none;
   color: #fff;
@@ -699,7 +696,6 @@ form .advanced {
 .discover_subsection p:first-of-type {
   font-size: 12px;
 }
-
 
 footer {
   background-color: black;
@@ -728,12 +724,12 @@ footer {
 }
 
 .footer_details .socials {
- margin-left: 0; 
- display: flex;
- gap: 5rem;
+  margin-left: 0;
+  display: flex;
+  gap: 5rem;
 }
 
-#top_btn button{
+#top_btn button {
   background-color: orange;
   color: #fff;
   width: 2rem;
@@ -741,5 +737,217 @@ footer {
   padding: 10px;
   border-radius: 3px;
   border: none;
-  margin: 0 1rem 1rem 0 ;
+  margin: 0 1rem 1rem 0;
+}
+
+/* ----- MEDIA QUERIES  */
+@media only screen and (max-width: 800px) {
+  * {
+    overflow: hidden;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .socials {
+    margin-left: 0;
+    font-size: 10px;
+    gap: 1px;
+  }
+
+  .header .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 12px;
+  }
+
+  .hero {
+    height: 18rem;
+  }
+
+  .hero_nav {
+    margin: 0 2rem;
+    padding-top: 0.5rem;
+  }
+
+  .hero_nav .houzez {
+    margin-left: 1rem;
+  }
+
+  .hero_nav .houzez i {
+    font-size: 20px;
+  }
+
+  .hero_nav .contact {
+    padding-top: 0;
+    margin-right: 0;
+  }
+
+  .hero_nav ul {
+    display: none;
+  }
+
+  .hamburger::before,
+  .hamburger::after,
+  .hamburger input {
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    display: block;
+    transform-origin: left center;
+  }
+
+  .hamburger input {
+    appearance: none;
+    padding: 0;
+    margin: 0 0 0;
+  }
+
+  .hamburger:has(input:checked) + nav ul {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 4rem;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0.5rem 0;
+    transition: all 1s ease-in;
+  }
+
+  .hamburger:has(input:checked) + nav ul li a {
+    color: orange;
+    display: flex;
+    font-size: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    right: 10px; 
+  }
+
+  .hamburger input:checked{
+    width: 100%;
+    opacity: 1;
+  }
+
+  .info {
+    color: white;
+    margin-left: 2rem;
+    justify-content: center;
+    padding: 2.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .info h1 {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+  }
+  
+  .info h1 + p {
+    width: 70%;
+    font-size: 12px;
+  }
+  
+  .info p:last-of-type {
+    padding-top: 0.8rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  .hero .bar {
+    width: 60%;
+    text-align: center;
+    margin: 0 10%;
+  }
+
+  form {
+    padding: 10px 0;
+    /* flex-direction: column; */
+  }
+
+  form .btns {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .form-input input {
+    border-radius: 1.5px;
+    padding: 0.4rem 0.4rem 0.4rem 0.7rem;
+    font-size: 12px;
+  }
+  
+  .form-input input::placeholder {
+    padding-left: 15px;
+  }
+  
+  .form-input {
+    width: 50%;
+    padding-right: 1rem;
+  }
+
+  .form-input i {
+    top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+  
+  form button {
+    border-radius: 1.5px;
+    padding: 0.4rem;
+    font-size: 12px;
+  }
+  
+  form .bed,
+  form .advanced {
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .section_header {
+    padding-top: 2rem;
+    padding-left: 0.5rem;
+    margin: 0 auto;
+  }
+  
+  .section_header p:first-of-type {
+    font-size: 1rem;
+  }
+
+  .section_header p:last-of-type {
+    font-size: 12px;
+  }
+
+
+
+  .perfectButtons {
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    gap: 0.3rem;
+    padding: 0.5rem 0;
+  }
+  .perfectButtons button {
+    padding: 6px;
+    font-size: 8px;
+    justify-content: center;
+  }
+  
+  .houses {
+    display: grid;
+  }
 }
